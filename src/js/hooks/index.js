@@ -1,2 +1,2 @@
-export { default as useDebounceFn } from './useDebounceFn'
-export { default as useLazyload } from './useLazyload'
+export { default as useDebounceFn } from "./useDebounceFn";
+export { default as useLazyload } from "./useLazyload";

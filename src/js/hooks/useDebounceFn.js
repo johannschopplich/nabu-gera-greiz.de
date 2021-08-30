@@ -6,12 +6,12 @@
  * @returns {Function} The debounced function representation
  */
 export default function (fn, delay = 250) {
-  let timeoutId
+  let timeoutId;
   return (...args) => {
-    if (timeoutId) clearTimeout(timeoutId)
+    if (timeoutId) clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
-      timeoutId = null
-      fn(...args)
-    }, delay)
-  }
+      timeoutId = null;
+      fn(...args);
+    }, delay);
+  };
 }
