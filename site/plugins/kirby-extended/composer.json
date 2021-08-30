@@ -22,15 +22,10 @@
     "php": ">=7.4.0",
     "getkirby/composer-installer": "^1.2",
     "symfony/polyfill-php80": "^1.20",
-    "vlucas/phpdotenv": "^5.0",
-    "voku/html-min": "^4.4"
+    "vlucas/phpdotenv": "^5.0"
   },
   "require-dev": {
     "getkirby/cms": "^3.0"
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "sort-packages": true
   },
   "autoload": {
     "files": [
@@ -41,8 +36,10 @@
     }
   },
   "scripts": {
-    "fix": "php-cs-fixer fix --config .php_cs",
     "dist": "composer install --no-dev --optimize-autoloader"
+  },
+  "config": {
+    "optimize-autoloader": true
   },
   "extra": {
     "kirby-cms-path": false
