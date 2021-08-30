@@ -1,10 +1,9 @@
 {
   "name": "nabu-gera-greiz.de",
   "private": true,
-  "type": "module",
   "scripts": {
     "assets:clean": "shx rm -rf public/assets/{css,js}",
-    "assets:hash": "node site/plugins/kirby-hashed-assets/scripts/hashAssets.js",
+    "assets:hash": "node site/plugins/kirby-hashed-assets/scripts/hashAssets.cjs",
     "build:css": "sass --style=compressed src/sass/main.sass public/assets/css/main.css",
     "build:js": "esbuild --bundle --format=esm --outdir=public/assets/js src/js/main.js",
     "dev": "npm run assets:clean && concurrently \"npm run build:css -- --watch\" \"npm run js:main -- --watch --sourcemap\"",
@@ -20,7 +19,6 @@
     "concurrently": "^6.2.1",
     "esbuild": "^0.12.24",
     "sass": "^1.38.2",
-    "shx": "^0.3.3",
-    "tiny-glob": "^0.2.9"
+    "shx": "^0.3.3"
   }
 }

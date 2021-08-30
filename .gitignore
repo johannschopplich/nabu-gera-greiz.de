@@ -1,6 +1,7 @@
 .DS_Store
 /.env
-node_modules/
+/node_modules
+/vendor
 
 # Kirby
 .lock
@@ -20,5 +21,5 @@ node_modules/
 
 # Build assets
 /public/assets/manifest.json
-/public/assets/css/
-/public/assets/js/
+/public/assets/css
+/public/assets/js
